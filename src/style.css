@@ -1,0 +1,413 @@
+
+/* Designsystem */
+:root {
+  --primary-color: #315c45;
+  --accent-color: #c9a66b;
+  --background-color: #faf8f2;
+  --text-color: #292d28;
+  --white: #ffffff;
+
+  /* Abstände */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --max-width: 1200px;
+}
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Responsive Bilder */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* HEADER */
+.site-header {
+  background-color: var(--primary-color);
+  padding: var(--space-md) 0;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.logo {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.navigation a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+
+/* HERO */
+.hero {
+  padding: var(--space-xl) 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.hero-text p {
+  margin-bottom: var(--space-lg);
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #244735;
+}
+
+/* HERO IMAGE */
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+/* SECTION */
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.section h2 {
+  color: var(--primary-color);
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
+}
+
+/* VORTEILE */
+.advantages-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+/* CARD */
+.card {
+  background-color: var(--white);
+  padding: var(--space-lg);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-icon {
+  font-size: 36px;
+}
+
+.card h3 {
+  color: var(--primary-color);
+}
+
+/* PRODUKTE */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+/* Produktkarte */
+.product-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover-Effekt */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Produktbild */
+.product-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Produktinformationen */
+.product-info {
+  padding: var(--space-lg);
+}
+
+.product-info h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.price {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* KONTAKT */
+.contact {
+  background-color: #e9eee7;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.contact h2,
+.contact p {
+  margin: 0;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: var(--space-lg) 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Breakpoint-Anzeige */
+.breakpoint-info {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: var(--space-sm) var(--space-md);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* FAQ */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 800px;
+}
+
+/* FAQ-Karte */
+.faq-item {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Frage */
+.faq-item summary {
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Antwort */
+.faq-item p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* MOBILE MENU – мобільна навігація */
+
+/* Logo links, Menü-Button rechts */
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+/* Hamburger-Button */
+.menu-toggle {
+  display: block;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Navigation zunächst verstecken */
+.navigation {
+  display: none;
+  grid-column: 1 / -1;
+}
+
+/* Navigation bei Klick anzeigen */
+.navigation.is-open {
+  display: flex;
+}
+
+/* TABLET – ab 768px */
+@media (min-width: 768px) {
+
+  /* Header horisontal*/
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    flex-direction: row;
+    gap: var(--space-lg);
+  }
+
+  /* Hero – text und foto neben */
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* Vorteile – 2 column */
+  .advantages-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Produkte – 2 */
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+/* DESKTOP – ab 1024px */
+@media (min-width: 1024px) {
+
+  /* */
+  .section {
+    padding: 64px 0;
+  }
+
+  /* */
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  /* 3 vorteile */
+  .advantages-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* 3 columns */
+  .products-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /*  */
+  .hero-content {
+    gap: 48px;
+  }
+}
+
+
+/* TABLET & DESKTOP – Navigation */
+@media (min-width: 768px) {
+
+  /* Hamburger-Button ausblenden */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Horizontale Navigation anzeigen */
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    grid-column: auto;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

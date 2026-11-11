@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TeaLeaf – natürliche Tees für jeden Geschmack.">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>TeaLeaf – Natürlich Tee genießen</title>
+</head>
+
+<body>
+<!--Breakpoint-Anzeige -->
+<div class="breakpoint-info" id="breakpoint-info">Layout: Mobile</div>
+  <!-- HEADER /  -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#start" class="logo">TeaLeaf 🌿</a>
+  <!-- Menü-Button / Кнопка мобільного меню -->
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Menü öffnen"
+      aria-expanded="false"
+      aria-controls="main-navigation">
+      ☰
+   </button>
+
+      <nav class="navigation" id="main-navigation" aria-label="Hauptnavigation">
+        <a href="#start">Start</a>
+        <a href="#vorteile">Vorteile</a>
+        <a href="#tees">Unsere Tees</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO / -->
+    <section class="hero" id="start">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Natürlich Tee genießen</h1>
+          <p>
+            Entdecke hochwertige Tees aus aller Welt.
+            Natürlich, aromatisch und mit Liebe ausgewählt.
+          </p>
+          <a href="#tees" class="button">Unsere Tees entdecken</a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="./public/images/hero.jpg"
+            alt="Grüner Tee in einem Glas mit frischen Teeblättern">
+        </div>
+      </div>
+    </section>
+
+    <!-- VORTEILE /  -->
+    <section class="advantages section" id="vorteile">
+      <div class="container">
+        <h2>Warum TeaLeaf?</h2>
+
+        <div class="advantages-grid">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">🌱</span>
+            <h3>Natürlich</h3>
+            <p>Ausgewählte Tees mit natürlichen Zutaten.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">🍵</span>
+            <h3>Hohe Qualität</h3>
+            <p>Beste Teesorten für besonderen Genuss.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">📦</span>
+            <h3>Schnelle Lieferung</h3>
+            <p>Dein Lieblingstee bequem nach Hause geliefert.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUKTE / -->
+    <section class="products section" id="tees">
+      <div class="container">
+        <h2>Unsere beliebtesten Tees</h2>
+        <p class="section-description">
+          Finde deinen neuen Lieblingstee.
+        </p>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <img
+            src="./public/images/green-tea.jpg"
+              alt="Grüner Tee mit Teekanne und Teeschalen auf einem Holztisch">
+            <div class="product-info">
+              <h3>Grüner Tee</h3>
+              <p>Frisch und leicht.</p>
+              <span class="price">8,90 €</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+            src="./public/images/black-tea.jpg"
+              alt="Schwarzer Tee in einer  Glastasse neben einer schwarzen Teekane">
+            <div class="product-info">
+              <h3>Schwarzer Tee</h3>
+              <p>Kräftig und aromatisch.</p>
+              <span class="price">9,90 €</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+            src="./public/images/herbal-tea.jpg"
+              alt="Kräutertee">
+
+            <div class="product-info">
+              <h3>Kräutertee</h3>
+              <p>Natürlich und wohltuend.</p>
+              <span class="price">7,90 €</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT /  -->
+
+    <!-- FAQ – поширені запитання -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <h2>Häufig gestellte Fragen</h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>Woher kommen unsere Tees?</summary>
+        <p>Unsere Tees stammen aus ausgewählten
+          Anbaugebieten weltweit.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Wie lange dauert die Lieferung?</summary>
+        <p>Die Lieferung dauert normalerweise
+          2 bis 4 Werktage.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Sind unsere Tees natürlich?</summary>
+        <p>Ja, wir legen großen Wert auf
+          natürliche Zutaten und hohe Qualität.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+    <section class="contact section" id="kontakt">
+      <div class="container contact-content">
+        <h2>Eine Tasse voller Genuss</h2>
+        <p>
+          Hast du Fragen zu unseren Tees?
+          Wir freuen uns auf deine Nachricht!
+        </p>
+        <a href="mailto:kontakt@example.com" class="button">
+          Kontaktiere uns
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER /  -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 TeaLeaf – Natürlich Tee genießen</p>
+      <a href="#start">Nach oben ↑</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript + CSS  -->
+  <script type="module" src="./src/main.js"></script>
+
+</body>
+</html>
+
